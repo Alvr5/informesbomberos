@@ -19,25 +19,12 @@
 
             <div class="input-group">
                 <label for="titulo">Título del Informe</label>
-                <input type="text" id="titulo" name="titulo" placeholder="Resumen mensual de ventas" required>
+                <input type="text" id="titulo" name="titulo" placeholder="Resumen de servicio" required>
             </div>
 
             <div class="input-group">
                 <label for="contenido">Contenido</label>
                 <textarea id="contenido" name="contenido" rows="5" placeholder="Escribe los detalles aquí..." required></textarea>
-            </div>
-
-            <div class="input-group">
-                <label for="canal">Canal de Envío</label>
-                <select id="canal" name="canal">
-                    <option value="discord">Discord (vía Webhook)</option>
-                    <option value="email">Correo Electrónico</option>
-                </select>
-            </div>
-
-            <div class="input-group" id="destinoGroup">
-                <label id="destinoLabel" for="destino">URL del Webhook de Discord</label>
-                <input type="text" id="destino" name="destino" placeholder="https://discord.com/api/webhooks/..." required>
             </div>
 
             <button type="submit" id="btnSubmit">Enviar Informe</button>
